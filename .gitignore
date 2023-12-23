@@ -1,0 +1,7 @@
+# Node.js
+node_modules/
+
+# Arquivos temporários
+.DS_Store
+.vscode/
+

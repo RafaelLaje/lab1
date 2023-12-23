@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Laboratório Trader</title>
+</head>
+<body>
+    <header>
+        <h1>LABORATÓRIO TRADER</h1>
+    </header>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="apiToken">Token API:</label>
+            <input type="text" id="apiToken" name="apiToken" required>
+            
+            <div class="consent-checkbox">
+                <input type="checkbox" id="consentCheck" required>
+                <label for="consentCheck">Eu compreendo e aceito os riscos envolvidos nas operações. <a href="#" onclick="showRiskDetails()">Saiba mais</a></label>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p class="new-user-link">
+            Novo usuário? <a href="https://track.deriv.com/_wqP9QTprufe6nlVz9UI_CWNd7ZgqdRLk/1/" target="_blank">Crie uma conta aqui</a>.
+        </p>
+
+        <div class="social-links">
+            <a href="http://www.youtube.com/@laboratoriotrader" target="_blank"><img src="icons/youtube.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/laboratoriotraderoficial?igshid=MmVlMjlkMTBhMg==" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/qr/NFTLAB3EHJWCH1" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/profile.php?id=61552156389142&mibextid=ZbWKwL" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+
+    <div id="riskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRiskModal()">&times;</span>
+            <h2>Riscos nas Operações</h2>
+            <p>
+                As operações realizadas neste ambiente envolvem riscos substanciais e podem resultar em perda total do capital investido.
+                É importante compreender que estratégias de trading, mesmo automatizadas, não garantem lucro e estão sujeitas a volatilidade
+                do mercado, eventos imprevistos e outros fatores que podem afetar negativamente o desempenho.
+            </p>
+            <p>
+                Ao continuar, você confirma que entende os riscos envolvidos e está ciente de que não há garantia de lucro nas operações realizadas.
+            </p>
+        </div>
+    </div>
+
+    <footer id="accessFooter">
+        <p id="accessMessage">© 2023 LABORATÓRIO TRADER. Todos os direitos reservados. Escrito por Rafael Silva em 21 de dezembro de 2023.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
